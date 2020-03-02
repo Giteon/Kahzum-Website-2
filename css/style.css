@@ -546,75 +546,11 @@ html {
    visibility: hidden;
 }
 
-/*tablets*/
-
-@media screen and (max-width: 769px){
-	html,body{
-		overflow-x: hidden;
-	}
-	body{
-		position: relative;
-	}
-	.home-section .site-title, .site-desc, .site-btn1, .site-btn2{
-		margin-left: 4%;
-	}
-	.navbar-section .logo-img{
-		width:250px;
-	}	
-	.highlights .card{
-		width: 15rem;
-	}
-	.highlights .card-img-top{
-		margin-left: 5%;
-		margin-right: 5%;
-	}
-	.highlights .card-title, .card-text{
-		font-size: 85%;
-		margin-left: 0%;
-		margin-right: 0%;
-		padding-left: 0%;
-		text-align: left;
-	}
-	.highlights .card-title{
-		font-size: 110% !important;
-	}
-	.highlights .card-body{
-		width: 240px;
-	}
-	.data-section .para{
-		line-height: 27px;
-		width: 300px;
-
-	}
-	.data-section .heading-1{
-		width: 300px;
-	}
-	.data-section .btn{
-		width: 50%;
-	}
-	.features .card{
-		width:110%;
-	}
-	.steps .card-body{
-		margin-left:0%;
-	}
-	.steps .card-img-top{
-		margin-left: 0%;
-	}
-	.steps .card-text{
-		width:140%;
-		text-align: left;
-	}
-	.pricing .col-lg-4{
-		margin-left: 0px
-	}
 
 
-}/*end tablets*/
+/********************************phones********************************************/
 
-/*phones*/
-
-@media screen and (max-width: 412px){
+@media screen and (min-width: 359px) and (max-width: 500px){
 
 	html,body{
 		overflow-x: hidden;
@@ -640,6 +576,9 @@ html {
 	.navbar-section .logo-img{
 		width:150px;
 	}
+	.highlights .heading-1{
+		font-size: 35px;
+	}
 	.highlights .highlights .heading-2{
 		font-size: 85%;
 	}
@@ -652,8 +591,8 @@ html {
 	.highlights .card{
 		width:15rem;
 		height: 97%;
-		margin-left: 3%;
-		margin-right: 2%;
+		margin-left: auto;
+		margin-right: auto;
 		margin-bottom: 4%;
 	}
 	.highlights .para-1{
@@ -748,6 +687,9 @@ html {
 		margin-bottom: 25px;
 		margin-top: 15px;
 	}
+	.pricing .col-lg-4{
+		margin-left: auto;
+	}
 	.steps .card-img-top{
 		margin-left: unset;
 	}
@@ -769,10 +711,160 @@ html {
 		font-size: 15px;
 	}
 	.footer .footer-text{
-		padding-bottom: 30px;
+		padding-bottom: 3px;
 	}
-	
+	.footer{
+		height: 170px;
+	}
+	.footer .logo-img{
+		margin-top: 30px;
+	}
+
 	footer input[type="button"]{
 		margin-top: 5%;
 	}
-}/*end phones*/
+}
+/*****************************end phones************************************/
+
+
+
+
+/***********************************tablets********************************/
+@media screen and (max-width: 769px) and (min-width: 600px){
+	html,body{
+		overflow-x: hidden;
+	}
+	body{
+		position: relative;
+	}
+	.home-section .site-title, .site-desc, .site-btn1, .site-btn2{
+		margin-left: 0%;
+	}
+	.home-section .site-desc{
+		width:550px;
+		margin-left: 105px;
+	}
+	.home-section .btn{
+		font-size: 20px;
+	}
+	.navbar-section .logo-img{
+		width:250px;
+	}	
+	.highlights .col-md-3{
+		width: 15rem;
+		margin-right: 150px;
+		margin-left: 0%;
+		height: 375px !important;
+
+	}
+	.highlights{
+		height: 960px;
+	}
+	.highlights .heading-1{
+		font-size: 50px;
+	}
+	.highlights .para-1{
+		margin-bottom: 5%;
+		font-size: 25px;
+	}
+	.highlights .card{
+		width: 150px;
+	}
+	.highlights .card-title .card-text{
+		width: 150px;
+		font-size: 80%;
+	}
+
+
+
+	.data-section .card-body{
+		height: 300px;
+	}
+	.data-section .para-1{
+		width: 107px;
+	}
+	.data-section .data-img{
+		width: 50%;
+	}
+	.data-section .heading-1{
+		font-size: 50px;
+	}
+
+	.features .card{
+		width:120%;
+	}
+	.features .col-md-4{
+		margin-right: 7%;
+	}
+	.features .features-title{
+		font-size: 25px;
+	}
+	.features .m-2{
+		margin-bottom: 15px !important;
+	}
+
+
+
+	.steps .steps-arrow{
+		display: none;
+	}
+
+	.steps .card-body{
+		width: 240px;
+	}
+	.steps .card-img-top{
+		margin-right: auto;
+		width: 100px;
+	}
+	.steps .card-text{
+		text-align: left;
+		margin-right: 10px !important;
+	}
+	.steps .steps-col{
+		margin-right: 0px;
+	}
+	.steps .steps-container{
+		margin-left: 0%;
+	}
+	.steps .card-title{
+		font-size: 21px;
+	}
+
+
+	.pricing{
+		height: 870px;
+	}
+	.pricing .heading-1{
+		font-size: 50px;
+	}
+	.pricing li{
+		font-size: 20px;
+	}
+	.pricing .btn{
+		font-size: 20px;
+	}
+	.pricing .card-price{
+		font-size: 70px;
+		margin-top: 5px !important;
+	}
+	.pricing span.period{
+		font-size: 20px !important;
+	}
+	.pricing .card-body{
+		margin-left: -115px;
+	}
+	.pricing .desc-card{
+		margin-left: 130px;
+		margin-right: 50px;
+		margin-top: 20px;
+		width: 400px;
+	}
+	.pricing .col-md-8{
+		width: 120%;
+	}
+	.footer .logo-img{
+		margin-top: 20px;
+	}
+
+}
+/****************************************end tablets*************************************/
