@@ -341,22 +341,18 @@
 				<h4 class="my-4">Got a question? We're happy to help!</h4>
 
 
-			<form>
-				<div class="form-group">
-					<div class="form-inline justify-content-center wow bounceIn" data-wow-delay="0.4s" data-wow-duration="1s">
-						<input type="text" name="Name" id="email" placeholder="Name" size="40" class="form-control px-4 py-2">
+			<form action="contact.php" method="post" enctype="multipart/form-data">
+				<div class="container col-md-4 justify-content-center wow bounceIn" data-wow-delay="0.4s" data-wow-duration="1s">
+					<div class="form-group">
+						<input type="text" name="name" id="name" placeholder="Name" size="40" class="form-control px-4 py-2">
 					</div>
-					<div class="form-inline justify-content-center wow bounceIn" data-wow-delay="0.4s" data-wow-duration="1s">
-						<input type="text" name="Email" id="email" placeholder="Email" size="40" class="form-control px-4 py-2">
+					<div class="form-group">
+						<input type="text" name="email" id="email" placeholder="Email" size="40" class="form-control px-4 py-2">
 					</div>
-					<div class="form-inline justify-content-center wow bounceIn" data-wow-delay="0.4s" data-wow-duration="1s">
-						<textarea type="text" name="Message" id="message" placeholder="Your Message Here" size="40" class="form-control px-4 py-8" rows="5" cols="40"></textarea>
+					<div class="form-group">
+						<textarea type="text" name="message" id="message" placeholder="Your Message Here" size="40" class="form-control px-4 py-8" rows="5" cols="40"></textarea>
 					</div>
-				</div> <!-- End email and message form group -->
-
-			
-				<div class="form-group">
-					<input type="button" value="Send" class="btn px-4 py-2 wow bounceIn text-uppercase" data-wow-delay="0.4s" data-wow-duration="1s" style="margin-left: 0%">
+					<button type="submit" class="btn px-4 py-2 wow bounceIn text-uppercase" data-wow-delay="0.4s" data-wow-duration="1s" style="margin-left: 0%">send</button>
 				</div> <!-- End contact button -->
 			</form> <!-- End form -->
 
