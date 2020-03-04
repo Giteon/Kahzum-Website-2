@@ -341,20 +341,18 @@
 				<h4 class="my-4">Got a question? We're happy to help!</h4>
 
 			<div class="contact-form">
-				<form id="contact-form" action="contact.php" method="post" enctype="multipart/form-data">
-					<div class="container col-md-4 justify-content-center wow bounceIn" data-wow-delay="0.4s" data-wow-duration="1s">
+				<div class="container col-md-4 justify-content-center wow bounceIn" data-wow-delay="0.4s" data-wow-duration="1s">
 							
-							<input type="text" name="name" id="name" placeholder="Name" size="40" class="form-control px-4 py-2">
-							<br>
+					<form name="input" id="contact-form" action="https://formspree.io/jugglerfox@gmail.com" method="POST">
+							<input type="text" name="name" placeholder="Name" size="40" class="form-control px-4 py-3" style="margin-bottom: 10px;">
 							
-							<input type="text" name="email" id="email" placeholder="Email" size="40" class="form-control px-4 py-2">
-							<br>
+							<input type="text" name="email" placeholder="Email" size="40" class="form-control px-4 py-3" style="margin-bottom: 10px;">
 							
-							<textarea type="text" name="message" id="message" placeholder="Your Message Here" size="40" class="form-control px-4 py-8" rows="5" cols="40"></textarea>
+							<textarea name="message" placeholder="Your Message Here" size="40" class="form-control px-4 py-8" rows="5" cols="40"></textarea>
 							
-							<input type="submit" class="form-control btn px-4 py-2 wow bounceIn text-uppercase" value="send" data-wow-delay="0.4s" data-wow-duration="1s" style="margin-left: 0%; margin-top: 10px; width:40%;">
-					</div> <!-- End contact button -->
-				</form> <!-- End form -->
+							<input type="submit" class="form-control btn px-4 py-2 wow bounceIn text-uppercase" value="send" data-wow-delay="0.4s" data-wow-duration="1s" style="margin-left: 0%; margin-top: 20px; width:30%;">
+					</form> <!-- End form -->
+				</div> <!-- End contact button -->
 			</div>
 
 
