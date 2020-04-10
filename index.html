@@ -25,7 +25,7 @@
 	<header>
 		<section class="navbar-section">
 			<nav class="my-navbar navbar navbar-expand-lg">
-				<img src="images/logo-light.png" alt="logo" class="logo-img wow lightSpeedIn" data-wow-delay=".1s">
+				<img src="images/logo-dark.png" alt="logo" class="logo-img wow lightSpeedIn" data-wow-delay=".1s">
 
 
 				<!-- <a href="#" class="navbar-brand">Kahzum</a> -->
@@ -77,7 +77,7 @@
 					<div class="d-flex justify-content-center" style="text-align: center">
 						<div class="title-col d-flex flex-column justify-content-center">
 							<h1 align="center" class="site-title wow zoomIn" data-wow-duration="1.5s">The Missing Piece in Your Small Business</h1>
-							<p align="center" class="site-desc animated zoomIn">Discover the best way to bring customers in the door</p>
+							<p align="center" class="site-desc animated zoomIn">Discover the best way to bring customers into your brick and mortar store</p>
 							<div class="d-flex flex-row justify-content-center">
 								<input type="button" value="Join Waitlist" class="btn site-btn1 px-5 py-4 mr-4 ml-2 btn-dark text-uppercase wow fadeInUp" data-wow-duration="2s" onclick="window.location.href = 'https://tinyurl.com/kahzum'">
 							</div>
@@ -340,21 +340,20 @@
 				<h1 style="margin-top: 15%; font-family:'Righteous'">Get in Touch</h4>
 				<h4 class="my-4">Got a question? We're happy to help!</h4>
 
-
-			<form action="contact.php" method="post" enctype="multipart/form-data">
+			<div class="contact-form">
 				<div class="container col-md-4 justify-content-center wow bounceIn" data-wow-delay="0.4s" data-wow-duration="1s">
-					<div class="form-group">
-						<input type="text" name="name" id="name" placeholder="Name" size="40" class="form-control px-4 py-2">
-					</div>
-					<div class="form-group">
-						<input type="text" name="email" id="email" placeholder="Email" size="40" class="form-control px-4 py-2">
-					</div>
-					<div class="form-group">
-						<textarea type="text" name="message" id="message" placeholder="Your Message Here" size="40" class="form-control px-4 py-8" rows="5" cols="40"></textarea>
-					</div>
-					<button type="submit" class="btn px-4 py-2 wow bounceIn text-uppercase" data-wow-delay="0.4s" data-wow-duration="1s" style="margin-left: 0%">send</button>
+							
+					<form name="input" id="contact-form" action="https://formspree.io/Mason@kahzum.com" method="POST">
+							<input type="text" name="name" placeholder="Name" size="40" class="form-control px-4 py-3" style="margin-bottom: 10px;">
+							
+							<input type="text" name="email" placeholder="Email" size="40" class="form-control px-4 py-3" style="margin-bottom: 10px;">
+							
+							<textarea name="message" placeholder="Your Message Here" size="40" class="form-control px-4 py-8" rows="5" cols="40"></textarea>
+							
+							<input type="submit" class="form-control btn px-4 py-2 wow bounceIn text-uppercase" value="send" data-wow-delay="0.4s" data-wow-duration="1s" style="margin-left: 0%; margin-top: 20px; width:30%;">
+					</form> <!-- End form -->
 				</div> <!-- End contact button -->
-			</form> <!-- End form -->
+			</div>
 
 
 
@@ -408,7 +407,6 @@
 		document.getElementById("data-button").style.display="none";
 		}
 	</script>
-
 
 </body>
 </html>
