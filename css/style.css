@@ -18,6 +18,9 @@ html {
   scroll-behavior: smooth;
 }
 
+.navbar-section{
+	
+}
 /*navbar section*/
 .navbar-section .navbar-brand{
 	font-family: 'Righteous';
@@ -25,10 +28,11 @@ html {
 	color: lightgreen !important;
 }
 
+
 .navbar-section .nav-link{
 	font-size: 14px;
 	margin: 10px;
-	color: black !important;
+	color: white !important;
 	font-family: 'Lato Condensed';
 
 }
@@ -63,7 +67,7 @@ html {
 }
 
 .navbar-section .my-navbar{
-    background:white;
+    background:black;
 }
 
 /*home section*/
@@ -89,9 +93,9 @@ html {
 .home-section .site-desc{
 	margin-top: -3%;
 	padding-left: 0%;
-	font-size: 22px;
-	width: 65%;
-	margin-left: 20%;
+	font-size: 23px;
+	width: 45%;
+	margin-left: 28%;
 }
 
 .home-section .site-btn1 {
@@ -563,6 +567,7 @@ html {
 	}
 	.home-section .site-desc{
 		font-size: 18px;
+		width: 50%;
 	}
 	.home-section .site-btn2{
 		display: none;
