@@ -18,6 +18,13 @@ html {
   scroll-behavior: smooth;
 }
 
+.mobile-show{
+	display: none !important;
+}
+
+.navbar-section{
+	
+}
 /*navbar section*/
 .navbar-section .navbar-brand{
 	font-family: 'Righteous';
@@ -25,10 +32,11 @@ html {
 	color: lightgreen !important;
 }
 
+
 .navbar-section .nav-link{
 	font-size: 14px;
 	margin: 10px;
-	color: black !important;
+	color: white !important;
 	font-family: 'Lato Condensed';
 
 }
@@ -63,7 +71,7 @@ html {
 }
 
 .navbar-section .my-navbar{
-    background:white;
+    background:black;
 }
 
 /*home section*/
@@ -89,9 +97,9 @@ html {
 .home-section .site-desc{
 	margin-top: -3%;
 	padding-left: 0%;
-	font-size: 22px;
-	width: 65%;
-	margin-left: 20%;
+	font-size: 23px;
+	width: 45%;
+	margin-left: 28%;
 }
 
 .home-section .site-btn1 {
@@ -158,6 +166,13 @@ html {
 .highlights .col-md-3{
 	margin-left: 2%;
 	margin-right: 2%;
+	height: 400px !important;
+}
+
+.highlights .home1{
+	margin-bottom: 80px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 1%;
 }
 
 
@@ -167,7 +182,7 @@ html {
 	/*background-image: url('images/28.jpg');*/
 	background-size: cover;
 	background-attachment: fixed;
-	height: 870px;
+	height: 800px;
 }
 
 .data-section .heading-1, .para, .btn{
@@ -277,6 +292,14 @@ html {
 	font-size: 22px;
 	font-family: 'Righteous';
 }
+
+.features .performance1{
+	margin-top: 80px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 1%;
+}
+
+
 /*steps section*/
 
 
@@ -287,7 +310,7 @@ html {
 
 .steps .heading-1{
 	font-family: 'Righteous';
-	margin-top: 20%;
+	margin-top: 5%;
 }
 
 .steps i{
@@ -355,6 +378,12 @@ html {
 
 .steps .steps-container{
 	margin-left: 5%;
+}
+
+.steps .insights1{
+	margin-top: 80px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 1%;
 }
 
 /*pricing section*/
@@ -450,7 +479,7 @@ html {
 }
 
 .pricing .text-center{
-	margin-top: 20%;
+	margin-top: 10%;
 }
 
 .pricing .text-muted {
@@ -558,11 +587,22 @@ html {
 	body{
 		position: relative;
 	}
+	.mobile-show{
+		display: block !important;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		border-radius: 1%;
+		margin-bottom: 10%;
+	}
 	.home-section .site-title{
 		font-size: 35px;
+		width: 80%;
+		align-self: center;
 	}
 	.home-section .site-desc{
 		font-size: 18px;
+		width: 60%;
+		align-self: center;
+		margin-left: 0%;
 	}
 	.home-section .site-btn2{
 		display: none;
@@ -614,13 +654,20 @@ html {
 	.highlights .card-text{
 		width: 120%;
 		text-align: left;
-		font-size: 15px;
+		font-size: 13px;
 	}
 
 	.highlights .card-img-top{
 		margin-left: 95px;
 		margin-right: auto;
 		margin-bottom: 0%;
+	}
+	.highlights .col-md-3{
+		margin-bottom: 5%;
+	}
+
+	.highlights .home1{
+		display:none;
 	}
 	.data-section .heading-1{
 		margin-top: 115px;
@@ -631,14 +678,14 @@ html {
 		font-size: 20px;
 	}
 	.data-section .card-body{
-		height: 90%;
+		height: 260px;
 	}
 	.data-section .data-img{
 		width: 50%;
 	}
 	.data-section .para-1{
 		width: 110%;
-		font-size: 80%;
+		font-size: 70%;
 		margin-bottom: 0%;
 	}
 	.features .card{
@@ -651,6 +698,13 @@ html {
 	.features .features-title{
 		font-size: 130%;
 		margin-top: 19px !important;
+	}
+	.features .performance1{
+		display:none;
+	}	
+	.features .mobileperformance1{
+		align-self: center;
+		margin-top: 20%;
 	}
 	.steps .card-img-top{
 		margin-left: auto;
@@ -667,6 +721,7 @@ html {
 	}
 	.steps .heading-1{
 		font-size: 32px;
+		margin-top: 10%;
 	}
 	.steps .para-1{
 		font-size: 15px;
@@ -679,7 +734,14 @@ html {
 		margin-right: 0%
 		margin-bottom: 5%;
 	}
-
+	.steps .insights1{
+		display: none;
+	}
+	.steps .mobileinsights1{
+		align-self: center;
+		margin-top: 10%;
+		margin-left: 22px !important;
+	}
 	.pricing{
 		height: 100%;
 	}
@@ -700,7 +762,6 @@ html {
 		padding-left: 4px !important;
 		padding-right: 4px !important;
 		width: 350px;
-		margin-bottom: 1%;
 	}
 	.contact-section .my-4{
 		font-size: 99%;
@@ -774,14 +835,16 @@ html {
 		width: 150px;
 		font-size: 80%;
 	}
-
-
+	.highlights .home1{
+		display: none;
+	}
 
 	.data-section .card-body{
-		height: 300px;
+		height: 290px;
 	}
 	.data-section .para-1{
 		width: 107px;
+		font-size: 13px;
 	}
 	.data-section .data-img{
 		width: 50%;
@@ -789,7 +852,9 @@ html {
 	.data-section .heading-1{
 		font-size: 50px;
 	}
-
+	.data-section .container-fluid{
+		height: 850px !important;
+	}
 	.features .card{
 		width:120%;
 	}
@@ -802,7 +867,9 @@ html {
 	.features .m-2{
 		margin-bottom: 15px !important;
 	}
-
+	.features .performance1{
+		display: none;
+	}
 
 
 	.steps .steps-arrow{
@@ -829,7 +896,9 @@ html {
 	.steps .card-title{
 		font-size: 21px;
 	}
-
+	.steps .insights1{
+		display: none;
+	}
 
 	.pricing{
 		height: 870px;
